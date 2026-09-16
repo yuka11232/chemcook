@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1000" viewBox="0 0 1500 1000" role="img" aria-label="Placeholder image">
+  <rect width="1500" height="1000" fill="#E6DDCE"/>
+  <rect x="14" y="14" width="1472" height="972" fill="none" stroke="#AA9B82" stroke-width="1.5" stroke-dasharray="7 6"/>
+  <g font-family="'IBM Plex Mono', 'Consolas', monospace" fill="#AA9B82">
+    <text x="34" y="58" font-size="35" letter-spacing="2.2">PLACEHOLDER</text>
+    <text x="34" y="114" font-size="31">PLATE 06  ·  crop 3:2</text>
+    <text x="34" y="166" font-size="31">Supermarket shelf, price labels legible,</text>
+    <text x="34" y="218" font-size="31">Azerbaijan. Shop and date recorded</text>
+    <text x="34" y="270" font-size="31">in the caption.</text>
+  </g>
+  <g stroke="#AA9B82" stroke-width="1.5">
+    <line x1="34" y1="74" x2="544" y2="74"/>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1250" viewBox="0 0 1000 1250" role="img" aria-label="Placeholder image">
+  <rect width="1000" height="1250" fill="#E4DCC8"/>
+  <rect x="14" y="14" width="972" height="1222" fill="none" stroke="#A8936A" stroke-width="1.5" stroke-dasharray="7 6"/>
+  <g font-family="'IBM Plex Mono', 'Consolas', monospace" fill="#A8936A">
+    <text x="34" y="58" font-size="23" letter-spacing="2.2">PLACEHOLDER</text>
+    <text x="34" y="114" font-size="20">PLATE 01  ·  crop 4:5</text>
+    <text x="34" y="148" font-size="20">Green lentils and red bell pepper,</text>
+    <text x="34" y="182" font-size="20">raw, side by side on one surface.</text>
+    <text x="34" y="216" font-size="20">Weighed. Light from the left.</text>
+    <text x="34" y="250" font-size="20">Scale reference in frame.</text>
+  </g>
+  <g stroke="#A8936A" stroke-width="1.5">
+    <line x1="34" y1="74" x2="374" y2="74"/>
+  </g>
+</svg>

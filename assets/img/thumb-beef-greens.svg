@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="700" viewBox="0 0 700 700" role="img" aria-label="Placeholder image">
+  <rect width="700" height="700" fill="#E8DEC6"/>
+  <rect x="14" y="14" width="672" height="672" fill="none" stroke="#B9A57B" stroke-width="1.5" stroke-dasharray="7 6"/>
+  <g font-family="'IBM Plex Mono', 'Consolas', monospace" fill="#B9A57B">
+    <text x="34" y="58" font-size="16" letter-spacing="2.2">PLACEHOLDER</text>
+    <text x="34" y="114" font-size="14">crop 1:1</text>
+    <text x="34" y="137" font-size="14">beef + leafy greens</text>
+  </g>
+  <g stroke="#B9A57B" stroke-width="1.5">
+    <line x1="34" y1="74" x2="272" y2="74"/>
+  </g>
+</svg>

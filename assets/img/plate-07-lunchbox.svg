@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1100" viewBox="0 0 1100 1100" role="img" aria-label="Placeholder image">
+  <rect width="1100" height="1100" fill="#E2DDCF"/>
+  <rect x="14" y="14" width="1072" height="1072" fill="none" stroke="#9E9781" stroke-width="1.5" stroke-dasharray="7 6"/>
+  <g font-family="'IBM Plex Mono', 'Consolas', monospace" fill="#9E9781">
+    <text x="34" y="58" font-size="26" letter-spacing="2.2">PLACEHOLDER</text>
+    <text x="34" y="114" font-size="22">PLATE 07  ·  crop 1:1</text>
+    <text x="34" y="151" font-size="22">A packed lunchbox, opened, overhead.</text>
+    <text x="34" y="188" font-size="22">Consented. No identifiable person.</text>
+  </g>
+  <g stroke="#9E9781" stroke-width="1.5">
+    <line x1="34" y1="74" x2="408" y2="74"/>
+  </g>
+</svg>

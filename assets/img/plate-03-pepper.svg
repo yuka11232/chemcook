@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1125" viewBox="0 0 900 1125" role="img" aria-label="Placeholder image">
+  <rect width="900" height="1125" fill="#E9CFC2"/>
+  <rect x="14" y="14" width="872" height="1097" fill="none" stroke="#C08370" stroke-width="1.5" stroke-dasharray="7 6"/>
+  <g font-family="'IBM Plex Mono', 'Consolas', monospace" fill="#C08370">
+    <text x="34" y="58" font-size="21" letter-spacing="2.2">PLACEHOLDER</text>
+    <text x="34" y="114" font-size="18">PLATE 03  ·  crop 4:5</text>
+    <text x="34" y="144" font-size="18">Red bell pepper, cut cheek,</text>
+    <text x="34" y="174" font-size="18">seed side up, weighed.</text>
+    <text x="34" y="204" font-size="18">Same surface and light as PLATE 02.</text>
+  </g>
+  <g stroke="#C08370" stroke-width="1.5">
+    <line x1="34" y1="74" x2="340" y2="74"/>
+  </g>
+</svg>

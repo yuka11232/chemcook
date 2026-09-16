@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1000" viewBox="0 0 1500 1000" role="img" aria-label="Placeholder image">
+  <rect width="1500" height="1000" fill="#DEDDD4"/>
+  <rect x="14" y="14" width="1472" height="972" fill="none" stroke="#93928A" stroke-width="1.5" stroke-dasharray="7 6"/>
+  <g font-family="'IBM Plex Mono', 'Consolas', monospace" fill="#93928A">
+    <text x="34" y="58" font-size="35" letter-spacing="2.2">PLACEHOLDER</text>
+    <text x="34" y="114" font-size="31">PLATE 05  ·  crop 3:2</text>
+    <text x="34" y="166" font-size="31">Working bench: labelled sample tubes,</text>
+    <text x="34" y="218" font-size="31">pH meter, balance, record sheet.</text>
+    <text x="34" y="270" font-size="31">Real equipment only.</text>
+  </g>
+  <g stroke="#93928A" stroke-width="1.5">
+    <line x1="34" y1="74" x2="544" y2="74"/>
+  </g>
+</svg>
