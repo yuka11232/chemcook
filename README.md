@@ -1,62 +1,84 @@
 # NUTRIX LAB — website
 
-Two pages built so far: the homepage and the first food-pairing page.
+A student-led initiative in Azerbaijan connecting food science, school
+nutrition, hands-on experiments and food knowledge across generations.
 
 ```
-index.html                              homepage
+index.html                              homepage: opening, four strands, pairings, method
+lunchbox.html                           School LunchBox Program (3 photographed boxes)
+library.html                            Interactive Food Library (ingredient explorer)
+archive.html                            Intergenerational Food Archive (searchable)
+lab.html                                Inside Our Lab (photo gallery + lightbox)
+impact.html                             Our Impact (documented vs. not yet counted)
 pairings/lentils-bell-pepper.html       Pair 01
 assets/css/nutrix.css                   the whole stylesheet
-assets/img/*.svg                        marked placeholders (see PHOTOGRAPHY.md)
-PHOTOGRAPHY.md                          shot list and house rules
+assets/js/nutrix.js                     mobile menu + photo lightbox (every page)
+assets/js/library.js                    Food Library data + explorer
+assets/js/archive.js                    Archive records + search
+assets/img/                             the team's own photographs (see PHOTOGRAPHY.md)
 ```
 
-No build step, no JavaScript, no dependencies. Open `index.html` in a browser.
-Fonts (Literata, IBM Plex Sans, IBM Plex Mono) load from Google Fonts, so the
-first load needs a network connection; the stack falls back to Noto and then to
-system faces offline.
+No build step and no dependencies. Open `index.html` in a browser. Fonts load
+from Google Fonts; the stack falls back to Noto and then system faces offline.
+
+JavaScript is used only where a page is interactive (menu, lightbox, explorer,
+archive search). Without it the menu is a plain list and photos open full-size;
+the explorer and archive show a note pointing to the LunchBox page.
+
+## Editing content
+
+**Add or correct a food** — `assets/js/library.js`, the `FOODS` list at the top.
+`status: 'seen'` only if the food is visible in one of our lunchbox photos;
+otherwise `'named'`. Facts must be general composition facts, never health claims.
+
+**Add a photographed lunchbox** — add a `.meal` article to `lunchbox.html` (copy
+Box 03), set the pin positions (`--x` / `--y` as % of the photo), and add the box
+to `BOXES` in `library.js`. List only what can be seen in the photo.
+
+**Add a family recipe to the archive** — `assets/js/archive.js`. Set `family` on
+the record (the shape is described at the top of the file). It appears on the
+card and in the record automatically, and the "With a family record" filter
+starts finding it. Only with the agreement of the person who shared it.
+
+**Impact numbers** in `impact.html` are counts of what is on this site (3 boxes,
+5 lab photos, 20 foods, 7 records). Update them by hand when those change.
 
 ## Editorial rules the markup enforces
 
 These are the reason several things look emptier than a normal marketing site.
 They are deliberate — please don't "fill them in" without the underlying work.
 
-- **Status is stated once per page**, near the top, and not repeated. The homepage
-  says it in the band under the opening; the pairing page says it in the box under
-  the question.
-- **Three kinds of evidence are kept apart** on a pairing page, each appearing
-  exactly once, distinguished by typography as well as colour: *measured by us*
-  (red mark, body text), *published by others* (navy rule down the left, citation
-  numerals), *planned* (grey mark). Never move a citation into the first block.
-- **No Food Interaction Score is displayed anywhere**, and none should be until the
-  formula, weightings and inputs can be published beside it.
-- **LunchBox AI is labelled as not yet built**, and no sample output is shown. A
-  demonstration recommendation on screen is indistinguishable from a real one.
-- **No price appears without a shop and a date.** The cost table holds em-dashes
-  until both exist.
-- **No in-vitro result is described as a human effect.** Each measurement on the
-  homepage carries its own explicit limit; the pairing page carries a limits block.
-- **No contributor, supervisor or partner is named** until they have agreed.
+- **Status is stated once per page**, near the top, and not repeated.
+- **Three kinds of evidence are kept apart** on a pairing page: *measured by us*
+  (red mark), *published by others* (navy rule, citation numerals), *planned*
+  (grey mark). Never move a citation into the first block.
+- **Programme pages use four provenance marks**, explained in each page's key:
+  ● seen in our photo · ◐ named by the team, not yet photographed ·
+  ○ general reference, not our research · ▫ not yet recorded.
+  Red stays reserved for laboratory measurements.
+- **Ingredients come from photos, not guesses.** Recipes, seasonings, amounts,
+  meat type and cost are listed as "not yet recorded" until the team records them.
+- **Archive reference sections are not recipes.** They carry no quantities; a
+  recipe on this site comes from a person who cooks it.
+- **No Food Interaction Score is displayed anywhere** until its formula,
+  weightings and inputs can be published beside it.
+- **LunchBox AI is labelled as not yet built**, and no sample output is shown.
+  The Food Library recommends nothing; it only reports what our boxes contain.
+- **No price appears without a shop and a date.**
+- **No in-vitro result is described as a human effect.**
+- **No contributor, supervisor, school or partner is named** until they agree.
+  Impact figures about people appear only with a date, a source and a method.
 
-## Accessibility and typography
+## Accessibility
 
-Checked in Chrome during the build:
-
-- Azerbaijani glyphs `Ə ə İ ı Ş ş Ğ ğ Ç ç Ö ö Ü ü` verified present in all three
-  faces by canvas measurement, not assumed. Azerbaijani runs carry `lang="az"`.
-- All text meets WCAG AA contrast on both pages (audited against computed styles).
-- Skip link, visible focus ring on every interactive element, no interactive
-  element hidden from keyboard. Cards for unbuilt pages are not links, so they
-  never appear in the tab order as dead ends.
-- Wide tables are scrollable regions with `tabindex="0"` and a visible hint at
-  narrow widths; the page body never scrolls sideways.
-- Motion is limited to 140 ms colour/border transitions, disabled under
-  `prefers-reduced-motion`.
-- Light-only by choice: the design is a printed-publication idiom, and `body`
-  paints its background explicitly.
-
-## Next
-
-Egg + tomato, beef + greens and rice + beans have cards on the homepage marked
-"page in preparation". Copy `pairings/lentils-bell-pepper.html` as the template —
-the block structure (`§1 Ingredients` … `§6 Sources`) is the record sheet and
-should stay consistent across pairings.
+- Azerbaijani glyphs verified in all three faces; Azerbaijani runs carry `lang="az"`.
+- Skip link, visible focus ring, 44px touch targets on menu and dialog buttons.
+- Lightbox and archive records use the native `<dialog>` (Esc closes, focus is
+  trapped and returned). Arrow keys step through lab photos.
+- Explorer selections are toggle buttons with `aria-pressed`; result changes are
+  announced through a polite live region.
+- Photo pins are decorative; the numbered list beside each photo is the content.
+- Wide tables scroll inside their own region; the page never scrolls sideways
+  (checked at 375, 512, 700, 800, 1000, 1060 and 1200px).
+- Motion is limited to short transitions, disabled under `prefers-reduced-motion`.
+- Light-only by choice: `body` paints its background explicitly.

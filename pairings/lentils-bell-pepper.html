@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lentils + red bell pepper — NUTRIX LAB</title>
 <meta name="description" content="Pairing 01: does red bell pepper change how much iron is released from lentils during digestion? The question, the preparation, published evidence and what NUTRIX LAB plans to measure.">
+<script>document.documentElement.className += ' js';</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&display=swap">
@@ -19,12 +20,15 @@
 <header class="masthead">
   <div class="wrap masthead-in">
     <a class="wordmark" href="../index.html">Nutrix&nbsp;Lab</a>
-    <nav class="mainnav" aria-label="Main">
+    <button class="navtoggle" type="button" aria-expanded="false" aria-controls="mainnav"><span class="navtoggle-bars" aria-hidden="true"></span>Menu</button>
+    <nav class="mainnav" id="mainnav" aria-label="Main">
       <ul>
-        <li><a href="../index.html#pairings" aria-current="page">Pairings</a></li>
-        <li><a href="../index.html#investigate">What we investigate</a></li>
-        <li><a href="../index.html#lunchbox">School lunches</a></li>
-        <li><a href="../index.html#method">Method &amp; status</a></li>
+        <li><a href="../lunchbox.html">LunchBox Program</a></li>
+        <li><a href="../library.html">Food Library</a></li>
+        <li><a href="../archive.html">Food Archive</a></li>
+        <li><a href="../lab.html">Inside Our Lab</a></li>
+        <li><a href="../impact.html">Our Impact</a></li>
+        <li><a href="../index.html#pairings" aria-current="page">Research</a></li>
       </ul>
     </nav>
   </div>
@@ -66,23 +70,16 @@
         </dl>
 
         <div class="plates wide">
-          <figure>
-            <img src="../assets/img/plate-02-lentils.svg" width="900" height="1125"
-                 alt="Placeholder for a photograph of dry green lentils raked flat and weighed.">
-            <figcaption>
-              <b>PLATE 02</b> — Green lentils (mərci), dry and weighed.
-              <span class="placeholder-tag">Placeholder</span>
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="../assets/img/plate-03-pepper.svg" width="900" height="1125"
-                 alt="Placeholder for a photograph of a red bell pepper cut cheek, seed side up, weighed.">
-            <figcaption>
-              <b>PLATE 03</b> — Red bell pepper (bolqar bibəri), cut cheek. Same
-              surface and light as Plate 02.
-              <span class="placeholder-tag">Placeholder</span>
-            </figcaption>
-          </figure>
+          <div class="pending-plate">
+            <b>PLATE 02 — PHOTOGRAPH TO BE TAKEN</b>
+            Green lentils (mərci), dry, raked flat and weighed. The weight goes in
+            the caption.
+          </div>
+          <div class="pending-plate">
+            <b>PLATE 03 — PHOTOGRAPH TO BE TAKEN</b>
+            Red bell pepper (bolqar bibəri), cut cheek, seed side up, weighed. Same
+            surface and light as Plate 02.
+          </div>
         </div>
 
       </div>
@@ -167,15 +164,11 @@
           </table>
         </div>
 
-        <figure class="wide" style="margin-top:var(--s5);">
-          <img src="../assets/img/plate-04-preparations.svg" width="1500" height="1000"
-               alt="Placeholder for a photograph of raw, boiled and baked bell pepper in equal portions side by side, photographed from above.">
-          <figcaption>
-            <b>PLATE 04</b> — Variants A, B and C in equal portions, overhead, one
-            frame. Shot as a set so the three are comparable.
-            <span class="placeholder-tag">Placeholder — photograph needed</span>
-          </figcaption>
-        </figure>
+        <div class="pending-plate wide-plate wide" style="margin-top:var(--s5);">
+          <b>PLATE 04 — PHOTOGRAPH TO BE TAKEN</b>
+          Variants A, B and C — raw, boiled and baked pepper — in equal portions,
+          overhead, in one frame, so the three are comparable.
+        </div>
       </div>
     </section>
 
@@ -366,36 +359,41 @@
     <div class="foot-grid">
       <div>
         <h4>Nutrix Lab</h4>
-        <p class="note" style="max-width:34ch;">
-          A student food-science project in Azerbaijan measuring what happens when
-          foods are eaten together.
+        <p class="note" style="max-width:36ch;">
+          A student-led initiative in Azerbaijan connecting food science, school
+          nutrition, hands-on experiments and Azerbaijani, Caspian and Mediterranean
+          food knowledge across generations.
         </p>
       </div>
       <div>
-        <h4>This site</h4>
+        <h4>Programme</h4>
         <ul>
-          <li><a href="../index.html#pairings">All pairings</a></li>
-          <li><a href="../index.html#investigate">What we investigate</a></li>
-          <li><a href="../index.html#lunchbox">School lunches</a></li>
-          <li><a href="../index.html#method">Method &amp; status</a></li>
+          <li><a href="../lunchbox.html">School LunchBox Program</a></li>
+          <li><a href="../library.html">Interactive Food Library</a></li>
+          <li><a href="../archive.html">Intergenerational Food Archive</a></li>
+          <li><a href="../lab.html">Inside Our Lab</a></li>
+          <li><a href="../impact.html">Our Impact</a></li>
         </ul>
       </div>
       <div>
-        <h4>Open science</h4>
+        <h4>Research</h4>
         <ul>
-          <li><span class="note">Protocol — to be published</span></li>
-          <li><span class="note">Dataset — to be published</span></li>
-          <li><span class="note">Code — to be published</span></li>
+          <li><a href="../index.html#pairings">All pairings</a></li>
+          <li><a href="../index.html#investigate">What we investigate</a></li>
+          <li><a href="../index.html#method">Method &amp; status</a></li>
+          <li><span class="note">Protocol, dataset, code — to be published</span></li>
         </ul>
       </div>
     </div>
     <p class="colophon">
-      Images marked <b>Placeholder</b> are layout stand-ins, not photographs of this
-      project's work. Cited research is the work of its authors and is not evidence
-      produced by NUTRIX&nbsp;LAB. Nothing on this site is medical advice.
+      Frames marked <b>Photograph to be taken</b> describe a planned shot; they are
+      not images of this project's work. Cited research is the work of its authors
+      and is not evidence produced by NUTRIX&nbsp;LAB. Nothing on this site is
+      medical advice.
     </p>
   </div>
 </footer>
 
+<script src="../assets/js/nutrix.js"></script>
 </body>
 </html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interactive Food Library — NUTRIX LAB</title>
+<meta name="description" content="Choose foods such as yogurt, tomato, hummus, chicken and potato to see which food groups they cover, which of NUTRIX LAB's lunchboxes combine them, and what questions the combination raises.">
+<script>document.documentElement.className += ' js';</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&display=swap">
+<link rel="stylesheet" href="assets/css/nutrix.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<div class="topbar"></div>
+
+<header class="masthead">
+  <div class="wrap masthead-in">
+    <a class="wordmark" href="index.html">Nutrix&nbsp;Lab</a>
+    <button class="navtoggle" type="button" aria-expanded="false" aria-controls="mainnav"><span class="navtoggle-bars" aria-hidden="true"></span>Menu</button>
+    <nav class="mainnav" id="mainnav" aria-label="Main">
+      <ul>
+        <li><a href="lunchbox.html">LunchBox Program</a></li>
+        <li><a href="library.html" aria-current="page">Food Library</a></li>
+        <li><a href="archive.html">Food Archive</a></li>
+        <li><a href="lab.html">Inside Our Lab</a></li>
+        <li><a href="impact.html">Our Impact</a></li>
+        <li><a href="index.html#pairings">Research</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="wrap">
+    <div class="pagehead">
+      <div>
+        <p class="eyebrow">Strand 04 · Food science</p>
+        <h1 class="display">Interactive Food Library</h1>
+        <p class="lede">
+          Choose foods and see how they combine: which food groups they cover,
+          which of our lunchboxes already put them together, and what questions
+          the combination raises for the lab.
+        </p>
+      </div>
+      <div class="pagehead-aside">
+        <p class="eyebrow" style="margin-bottom:var(--s3);">What this tool will and won't tell you</p>
+        <p>
+          Every food here comes from our own lunchboxes. The facts about each one
+          are general and widely documented — what it contains, how it behaves
+          when cooked or packed.
+        </p>
+        <p class="note">
+          It gives no health advice and no scores, and it does not recommend
+          meals. Questions marked <i>planned</i> have not been measured.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend-band">
+    <div class="wrap">
+      <span class="label">Key</span>
+      <ul class="legend">
+        <li><span class="pv pv-seen" aria-hidden="true">●</span> Seen in our lunchbox photos</li>
+        <li><span class="pv pv-named" aria-hidden="true">◐</span> Named by the team, not yet photographed</li>
+      </ul>
+    </div>
+  </div>
+
+  <section aria-labelledby="explorer-h" style="padding-top:var(--s6);">
+    <div class="wrap">
+      <h2 class="visually-hidden" id="explorer-h">Ingredient explorer</h2>
+
+      <div class="explorer" id="explorer">
+        <div class="chooser">
+          <p class="h3" style="margin-bottom:var(--s4);">Choose foods</p>
+          <div class="chooser-groups"></div>
+          <div class="chooser-bar">
+            <div class="presets"><span class="note" style="margin:0;">Load a whole box:</span></div>
+            <button type="button" class="textbtn" data-clear>Clear selection</button>
+          </div>
+        </div>
+
+        <div>
+          <p class="visually-hidden" id="explorer-status" aria-live="polite"></p>
+          <div class="results"></div>
+        </div>
+      </div>
+
+      <noscript>
+        <div class="callout" style="margin-top:var(--s5);">
+          <h3 class="h3">The explorer needs JavaScript</h3>
+          <p>Every food in the library is also listed, box by box, on the
+          <a href="lunchbox.html">LunchBox Program</a> page.</p>
+        </div>
+      </noscript>
+    </div>
+  </section>
+
+  <!-- Combinations from the wider kitchen ─────────────────────────────── -->
+  <section class="band rule-top" id="combinations" aria-labelledby="combos-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="h2" id="combos-h">Mediterranean and Caspian combinations</h2>
+        <p>
+          Dishes from Azerbaijani, Caspian and Mediterranean kitchens that already
+          put foods together, and the question each pairing raises for the lab.
+          Questions, not results — none of these has been measured by us.
+        </p>
+      </div>
+
+      <div class="strands">
+        <article class="strand">
+          <span class="typetile" aria-hidden="true" style="--a:#8A6012;"><span class="tt-a" lang="az">Noxud + limon</span></span>
+          <div>
+            <span class="chip chip-ref">Published evidence · not our measurement</span>
+            <h3>Hummus: chickpeas + lemon</h3>
+            <p>Chickpeas carry plant (non-haem) iron; lemon juice carries vitamin&nbsp;C. Published single-meal studies show vitamin&nbsp;C can increase how much non-haem iron is absorbed. But chickpeas and tahini also contain phytate, which binds iron — so one dish holds both a helper and a blocker.</p>
+            <p class="ev">The same question as <a href="pairings/lentils-bell-pepper.html">Pair 01: lentils + bell pepper</a>.</p>
+          </div>
+        </article>
+
+        <article class="strand">
+          <span class="typetile" aria-hidden="true" style="--a:#A3301C;"><span class="tt-a" lang="az">Pomidor + zeytun yağı</span></span>
+          <div>
+            <span class="chip chip-ref">Published evidence · not our measurement</span>
+            <h3>Tomato + olive oil</h3>
+            <p>Lycopene, the red pigment in tomato, dissolves in fat, not water. Published studies report that more lycopene is absorbed when tomato is eaten with oil, and from cooked tomato than from raw — the opposite of vitamin&nbsp;C, which heat destroys.</p>
+            <p class="ev">Links to our planned egg + tomato pairing, which compares raw and cooked tomato.</p>
+          </div>
+        </article>
+
+        <article class="strand">
+          <span class="typetile" aria-hidden="true" style="--a:#3C5A3A;"><span class="tt-a">Tabbouleh</span></span>
+          <div>
+            <span class="chip chip-prep">Question for the lab</span>
+            <h3>Bulgur + parsley + lemon</h3>
+            <p>Wheat and parsley both carry plant iron; parsley and lemon both carry vitamin&nbsp;C. The dish is eaten raw, so no vitamin&nbsp;C is lost to cooking. Does iron come out of it in the digestion model the way the published evidence would suggest?</p>
+            <p class="ev">A Mediterranean salad close to the herb salad in <a href="lunchbox.html#box-3">Box 03</a>.</p>
+          </div>
+        </article>
+
+        <article class="strand">
+          <span class="typetile" aria-hidden="true" style="--a:#2E3A59;"><span class="tt-a" lang="az">Cacıq</span></span>
+          <div>
+            <span class="chip chip-prep">Planned measurement</span>
+            <h3>Yogurt + cucumber + dill</h3>
+            <p>Eaten as <span lang="az">cacıq</span> in Azerbaijan and as tzatziki around the Mediterranean. Yogurt is acidic; cucumber is about 95% water. Our planned pH measurement asks how far mixing them shifts the acidity.</p>
+            <p class="ev">Needs to stay cool until lunch. See <a href="archive.html#dovga">dovğa</a>, the warm yogurt-and-herb relative.</p>
+          </div>
+        </article>
+
+        <article class="strand">
+          <span class="typetile" aria-hidden="true" style="--a:#5E5428;"><span class="tt-a">Borani</span></span>
+          <div>
+            <span class="chip chip-ref">Published evidence · not our measurement</span>
+            <h3>Spinach + yogurt</h3>
+            <p>A Caspian dish of cooked spinach folded into yogurt. Spinach contains oxalate, which binds calcium into an insoluble salt — published studies show that calcium from spinach is poorly absorbed for this reason. Does the spinach's oxalate also bind calcium from the yogurt?</p>
+            <p class="ev">A combination where two foods may work against each other.</p>
+          </div>
+        </article>
+
+        <article class="strand">
+          <span class="typetile" aria-hidden="true" style="--a:#6E2E25;"><span class="tt-a" lang="az">Balıq + narşərab</span></span>
+          <div>
+            <span class="chip chip-prep">Planned measurement</span>
+            <h3>Fish + something sour</h3>
+            <p>On the Caspian coast, fish such as kütüm is served with <span lang="az">narşərab</span>, a sour pomegranate sauce; around the Mediterranean, grilled fish comes with lemon. Our planned pH measurement asks how much the sour partner changes the acidity of the mixture.</p>
+            <p class="ev">Cooked fish, like meat, must be kept cool until it is eaten.</p>
+          </div>
+        </article>
+      </div>
+
+      <p class="note" style="margin-top:var(--s5); max-width:62ch;">
+        Published evidence is described in general terms and is not a NUTRIX&nbsp;LAB
+        result. Nothing here is dietary advice.
+      </p>
+    </div>
+  </section>
+
+  <section class="rule-top" aria-labelledby="how-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="h2" id="how-h">How the library is built</h2>
+        <p>
+          The library is a lookup over our own records. It is deliberately small:
+          it only grows as our lunchboxes, archive and lab work do.
+        </p>
+      </div>
+      <ol class="steps steps-4">
+        <li>
+          <h3>Foods from our boxes</h3>
+          <p>A food enters the library when it appears in one of our photographed lunchboxes, or the team names it as a lunchbox food.</p>
+        </li>
+        <li>
+          <h3>Food groups</h3>
+          <p>Each food is placed in one group — starchy, protein, dairy, fruit and vegetables, or herbs and spices — the way public food guides group them.</p>
+        </li>
+        <li>
+          <h3>Combinations</h3>
+          <p>"Found together" means the foods were packed in the same photographed box. Nothing else counts as a documented combination.</p>
+        </li>
+        <li>
+          <h3>Questions, not results</h3>
+          <p>Questions link to our pairings, our planned measurements or the archive. When a result is measured, it will be marked as ours, with its date.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+</main>
+
+<footer class="sitefoot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Nutrix Lab</h4>
+        <p class="note" style="max-width:36ch;">
+          A student-led initiative in Azerbaijan connecting food science, school
+          nutrition, hands-on experiments and Azerbaijani, Caspian and Mediterranean
+          food knowledge across generations.
+        </p>
+      </div>
+      <div>
+        <h4>Programme</h4>
+        <ul>
+          <li><a href="lunchbox.html">School LunchBox Program</a></li>
+          <li><a href="library.html">Interactive Food Library</a></li>
+          <li><a href="archive.html">Intergenerational Food Archive</a></li>
+          <li><a href="lab.html">Inside Our Lab</a></li>
+          <li><a href="impact.html">Our Impact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Research</h4>
+        <ul>
+          <li><a href="index.html#pairings">Pairings</a></li>
+          <li><a href="index.html#investigate">What we investigate</a></li>
+          <li><a href="index.html#method">Method &amp; status</a></li>
+          <li><span class="note">Protocol, dataset, code — to be published</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="colophon">
+      All photographs are the project team's own, taken during project work.
+      Students pictured are members of the team. Azerbaijani names are given alongside English. Nothing on this
+      site is medical or dietary advice.
+    </p>
+  </div>
+</footer>
+
+<script src="assets/js/nutrix.js"></script>
+<script src="assets/js/library.js"></script>
+</body>
+</html>

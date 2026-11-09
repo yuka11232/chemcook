@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intergenerational Food Archive — NUTRIX LAB</title>
+<meta name="description" content="A searchable archive connecting traditional Azerbaijani, Caspian and Mediterranean dishes, family food knowledge and the school lunchboxes NUTRIX LAB packs today.">
+<script>document.documentElement.className += ' js';</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&display=swap">
+<link rel="stylesheet" href="assets/css/nutrix.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<div class="topbar"></div>
+
+<header class="masthead">
+  <div class="wrap masthead-in">
+    <a class="wordmark" href="index.html">Nutrix&nbsp;Lab</a>
+    <button class="navtoggle" type="button" aria-expanded="false" aria-controls="mainnav"><span class="navtoggle-bars" aria-hidden="true"></span>Menu</button>
+    <nav class="mainnav" id="mainnav" aria-label="Main">
+      <ul>
+        <li><a href="lunchbox.html">LunchBox Program</a></li>
+        <li><a href="library.html">Food Library</a></li>
+        <li><a href="archive.html" aria-current="page">Food Archive</a></li>
+        <li><a href="lab.html">Inside Our Lab</a></li>
+        <li><a href="impact.html">Our Impact</a></li>
+        <li><a href="index.html#pairings">Research</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="wrap">
+    <div class="pagehead">
+      <div>
+        <p class="eyebrow">Strand 03 · Cultural knowledge</p>
+        <h1 class="display">Intergenerational Food Archive</h1>
+        <p class="lede">
+          Grandparents know things about food that no lab manual records: how to
+          keep yogurt from splitting, why bread is never thrown away, which herbs
+          belong on the table. This archive connects that knowledge to the
+          lunchboxes we pack today.
+        </p>
+      </div>
+      <div class="pagehead-aside">
+        <p class="eyebrow" style="margin-bottom:var(--s3);">Where the archive stands</p>
+        <p>
+          The team has recorded <b>25 family recipes</b> — Azerbaijani, Caspian
+          and Mediterranean — through conversations with parents and
+          grandparents. They are being added here, each checked with the family
+          first. Seven reference records are already open, each linked to our
+          lunchboxes; the <a href="#collect" style="color:var(--published);">interview
+          guide</a> below is how every recipe was collected.
+        </p>
+        <p class="note">
+          Reference sections are general, widely documented background, marked
+          <span class="pv pv-ref">○</span>. They are not recipes, and not our research.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Three generations ──────────────────────────────────────────────────── -->
+  <section class="band rule-top" aria-labelledby="layers-h" style="padding-block:var(--s7);">
+    <div class="wrap">
+      <h2 class="h3" id="layers-h" style="text-align:center; margin-bottom:var(--s6);">Every record has three layers, kept apart</h2>
+      <ol class="gen-thread">
+        <li>
+          <span class="gen-dot" aria-hidden="true">○</span>
+          <h3>The tradition</h3>
+          <p>What the dish is, where it comes from, how it is usually made. General reference, clearly marked.</p>
+        </li>
+        <li>
+          <span class="gen-dot" aria-hidden="true">▫</span>
+          <h3>The family</h3>
+          <p>One family's own version, recorded by interview with permission — in their words, with their amounts.</p>
+        </li>
+        <li>
+          <span class="gen-dot" aria-hidden="true">●</span>
+          <h3>The lunchbox</h3>
+          <p>How the dish or its ingredients show up in what we pack for school today — or could.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Archive ────────────────────────────────────────────────────────────── -->
+  <section id="records" aria-labelledby="records-h">
+    <div class="wrap">
+      <div class="headrow">
+        <h2 class="h2" id="records-h">Search the archive</h2>
+        <p class="note">Search in English or Azerbaijani, with or without special letters — <i>dovga</i> finds <span lang="az">Dovğa</span>.</p>
+      </div>
+
+      <div class="archive-tools">
+        <div class="searchfield">
+          <label for="archive-search">Dish, ingredient or tradition</label>
+          <input type="search" id="archive-search" placeholder="e.g. yogurt, rice, Novruz, chickpeas" autocomplete="off">
+        </div>
+        <p class="archive-count" id="archive-count" aria-live="polite"></p>
+      </div>
+      <div class="filterrow" id="archive-filters" role="group" aria-label="Filter records"></div>
+
+      <ul class="recgrid" id="recgrid"></ul>
+
+      <noscript>
+        <div class="callout">
+          <h3 class="h3">Search needs JavaScript</h3>
+          <p>The archive records are loaded by script. The lunchboxes they connect
+          to are on the <a href="lunchbox.html">LunchBox Program</a> page.</p>
+        </div>
+      </noscript>
+    </div>
+  </section>
+
+  <!-- Tradition to lunchbox ──────────────────────────────────────────────── -->
+  <section class="band rule-top" aria-labelledby="lessons-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="h2" id="lessons-h">What old kitchens can teach a lunchbox</h2>
+        <p>
+          Traditional food was designed for the same problems a school lunch has:
+          no fridge, a long wait before eating, and nothing to waste. Each lesson
+          below is visible in a box we have already packed — or suggests a new one.
+        </p>
+      </div>
+      <ol class="steps">
+        <li>
+          <h3>Sour, without the liquid</h3>
+          <p>Sumac gives onions their sourness without a dressing that would soak the box.</p>
+          <p class="note" style="margin:0;"><a href="archive.html#kabab">Kabab</a> · <a href="lunchbox.html#box-3">Box 03</a></p>
+        </li>
+        <li>
+          <h3>Keep it whole until lunch</h3>
+          <p>Vegetables chopped just before eating stay crisp. Whole tomato and cucumber travel best.</p>
+          <p class="note" style="margin:0;"><a href="archive.html#salat">Salad</a> · <a href="lunchbox.html#box-1">Boxes 01</a>, <a href="lunchbox.html#box-2">02</a></p>
+        </li>
+        <li>
+          <h3>Stored for winter</h3>
+          <p>Nuts and dried fruit were made to keep without cold. They make a snack that survives any school day.</p>
+          <p class="note" style="margin:0;"><a href="archive.html#quru-meyve">Nuts &amp; dried fruit</a> · <a href="lunchbox.html#box-3">Box 03</a></p>
+        </li>
+        <li>
+          <h3>Nothing wasted</h3>
+          <p>The custom of never throwing bread away is the same question as our plan to record what comes home uneaten.</p>
+          <p class="note" style="margin:0;"><a href="archive.html#corek">Çörək</a> · <a href="lunchbox.html#box-2">Box 02</a></p>
+        </li>
+        <li>
+          <h3>Hot or cold</h3>
+          <p>Dovğa is eaten warm in winter and chilled in summer — a starting idea for a yogurt box that has not been made or tested yet.</p>
+          <p class="note" style="margin:0;"><a href="archive.html#dovga">Dovğa</a> · <span>Idea</span></p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Collect ────────────────────────────────────────────────────────────── -->
+  <section id="collect" class="rule-top" aria-labelledby="collect-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="h2" id="collect-h">How a family recipe enters the archive</h2>
+        <p>
+          The archive is meant to be filled by students talking with the older
+          people in their families. Here is how a record is made — and the
+          questions to start with.
+        </p>
+      </div>
+
+      <ol class="steps steps-4" style="margin-bottom:var(--s7);">
+        <li>
+          <h3>Ask first</h3>
+          <p>Explain what the archive is and ask permission to record. Agree whether their name is used — or just "a grandmother of a team member".</p>
+        </li>
+        <li>
+          <h3>Listen and write it down</h3>
+          <p>Use the questions below. Write amounts the way they are given — "a glass of rice", "a handful of dill" — and don't convert them.</p>
+        </li>
+        <li>
+          <h3>Cook it together</h3>
+          <p>If possible, make the dish with them and photograph it the way our lunchboxes are photographed: overhead, as it is.</p>
+        </li>
+        <li>
+          <h3>Read it back</h3>
+          <p>The family checks the record before it is published. Then it gets its own layer on the card, marked as collected, with the date.</p>
+        </li>
+      </ol>
+
+      <h3 class="h3" style="margin-bottom:var(--s4);">Interview guide</h3>
+      <ol class="interview">
+        <li>What dish do you most connect with your childhood?</li>
+        <li>Who made it, and who taught them?</li>
+        <li>What went into it — and where did the ingredients come from?</li>
+        <li>How much of each? Use the measures you use: glasses, spoons, handfuls.</li>
+        <li>What is one step a recipe book would leave out?</li>
+        <li>When was it eaten — every day, in one season, or at celebrations?</li>
+        <li>How was food kept fresh before fridges were common?</li>
+        <li>What did children take with them to school, or to the fields?</li>
+        <li>What was never thrown away, and what happened to leftovers?</li>
+        <li>How has the dish changed between your generation and ours?</li>
+      </ol>
+      <p class="note" style="margin-top:var(--s5); max-width:62ch;">
+        Recipes, names and photographs are published only with the agreement of
+        the person who shared them.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="sitefoot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Nutrix Lab</h4>
+        <p class="note" style="max-width:36ch;">
+          A student-led initiative in Azerbaijan connecting food science, school
+          nutrition, hands-on experiments and Azerbaijani, Caspian and Mediterranean
+          food knowledge across generations.
+        </p>
+      </div>
+      <div>
+        <h4>Programme</h4>
+        <ul>
+          <li><a href="lunchbox.html">School LunchBox Program</a></li>
+          <li><a href="library.html">Interactive Food Library</a></li>
+          <li><a href="archive.html">Intergenerational Food Archive</a></li>
+          <li><a href="lab.html">Inside Our Lab</a></li>
+          <li><a href="impact.html">Our Impact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Research</h4>
+        <ul>
+          <li><a href="index.html#pairings">Pairings</a></li>
+          <li><a href="index.html#investigate">What we investigate</a></li>
+          <li><a href="index.html#method">Method &amp; status</a></li>
+          <li><span class="note">Protocol, dataset, code — to be published</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="colophon">
+      All photographs are the project team's own, taken during project work.
+      Reference sections in the archive describe widely documented traditions and
+      are not the team's research. Nothing on this site is medical or dietary advice.
+    </p>
+  </div>
+</footer>
+
+<script src="assets/js/nutrix.js"></script>
+<script src="assets/js/archive.js"></script>
+</body>
+</html>

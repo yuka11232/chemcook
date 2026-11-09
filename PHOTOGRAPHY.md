@@ -1,7 +1,30 @@
 # Photography checklist — NUTRIX LAB
 
-Every image currently on the site is a marked placeholder. Replace them with real
-photographs before the site is shown publicly.
+## Photographs on the site now
+
+| File | Shows | Used on |
+|---|---|---|
+| `lunchbox-01-beans-fruit-bread.jpg` | Box 01: bean/chickpea dish with lemon, banana + dates + cinnamon, bread, tomato, cucumber | LunchBox, Library, Archive, Home |
+| `lunchbox-02-chicken-mash.jpg` | Box 02: roast chicken, mash, roasted tomato, bread, cucumber, persimmon, tomato, apple | LunchBox, Library, Archive, Home, Impact |
+| `lunchbox-03-rice-salad-grill.jpg` | Box 03: yellow rice, salad, grilled meat with sumac onions, nuts + raisins | LunchBox, Library, Archive, Impact |
+| `Homemade-Healthy-Hummus-Recipe1.jpg` | A served plate of hummus with lemon and flatbread (illustration, not a team box; **source and credit still needed** — rule 5) | LunchBox ("Yogurt and hummus" card) |
+| `lab-01-reagent-pipette.jpg` | Adding blue reagent by pipette to a food sample | Home (opening), Lab, Impact |
+| `lab-02-stirring-sample.jpg` | Stirring a red food sample with a glass rod | Lab |
+| `lab-03-filtering.jpg` | Two students filtering a food extract | Home, Lab, Impact |
+| `lab-04-sample-reagent.jpg` | Mixing a sample beside a bottle of blue reagent | Lab |
+| `lab-05-weighing-salt.jpg` | Weighing iodised salt on an analytical balance | Home, Lab |
+
+**Before the site goes public:** the lab photographs show students' faces. Rule 4
+below applies — confirm written permission from every student pictured (and a
+parent or guardian for anyone under 18), or replace/crop the photo. `lab-02`
+also shows an institution's name on the window behind; the site does not name
+any institution, so consider cropping it out.
+
+Still wanted: a photographed box with **yogurt** and one with **hummus** (the
+LunchBox card currently shows an illustrative hummus photo in their place), and the pairing
+plates in the shot list below. The SVG placeholders named in the shot list have
+been removed; the pairing page shows a described "photograph to be taken" frame
+for each instead.
 
 ## House rules
 
